@@ -50,7 +50,6 @@ export const Contacto = () => {
             onChange={(e) => setNumber(e.target.value)}
             required
           />
-          
         </div>
         <div>
           <label>Mensaje:</label>
