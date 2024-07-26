@@ -1,4 +1,5 @@
 import  { useState } from 'react';
+import styles from "./Contacto.module.css";
 
 export const Contacto = () => {
   
@@ -20,7 +21,7 @@ export const Contacto = () => {
     };
   
   return (
-    <div>
+    <div className={styles.contacto}>
       <h2>Formulario de Contacto</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -43,12 +44,13 @@ export const Contacto = () => {
         </div>
         <div>
           <label>Numero:</label>
-          <textarea
-            type="numero"
+          <input
+            type="number"
             value={number}
             onChange={(e) => setNumber(e.target.value)}
             required
           />
+          
         </div>
         <div>
           <label>Mensaje:</label>
