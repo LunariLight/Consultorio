@@ -1,4 +1,5 @@
 import  { useState } from 'react';
+import styles from "./Contacto.module.css";
 
 export const Contacto = () => {
   
@@ -7,7 +8,6 @@ export const Contacto = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [number, setNumber] = useState('');
-
   
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -21,7 +21,7 @@ export const Contacto = () => {
     };
   
   return (
-    <div>
+    <div className={styles.contacto}>
       <h2>Formulario de Contacto</h2>
       <form onSubmit={handleSubmit}>
         <div>
