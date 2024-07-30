@@ -21,12 +21,12 @@ export const Contacto = () => {
     };
   
   return (
-    <div className={styles.contacto}>
+    <div className={styles.contacto }>
       <h2>Formulario de Contacto</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Nombre:</label>
-          <input
+          <input className={styles.inputNombre}
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -36,6 +36,7 @@ export const Contacto = () => {
         <div>
           <label>Email:</label>
           <input
+          className={styles.inputNombre}
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -45,6 +46,7 @@ export const Contacto = () => {
         <div>
           <label>Numero:</label>
           <input
+          className={styles.inputNombre}
             type="number"
             value={number}
             onChange={(e) => setNumber(e.target.value)}
@@ -54,12 +56,13 @@ export const Contacto = () => {
         <div>
           <label>Mensaje:</label>
           <textarea
+          className={styles.inputNombre}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
           />
         </div>
-        <button type="submit">Enviar</button>
+        <button className={styles.boton} type="submit">Enviar</button>
       </form>
     </div>
   )
