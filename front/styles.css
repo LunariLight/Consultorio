@@ -1,0 +1,37 @@
+.fade-in {
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn; /* Prefijo para navegadores WebKit */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s; /* Prefijo para navegadores WebKit */
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out; /* Prefijo para navegadores WebKit */
+    visibility: visible !important;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn { /* Prefijo para navegadores WebKit */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: #fff;
+    color: #000;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    line-height: var(--line-height);
+}

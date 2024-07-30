@@ -4,6 +4,39 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #af4848;
+    background-color: rgb(130, 152, 176);
     
+}
+ .inputNombre {
+    font-family: "Gordita", sans-serif;
+    font-size: 1.8rem;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid currentColor;
+    padding: 2rem;
+    box-shadow: none !important;
+    margin-bottom: 2rem;
+ }
+.boton{
+    font-family: "Gordita", sans-serif;
+    font-size: 1.8 rem;
+    width: auto;
+    will-change: opacity, transform;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    outline: none;
+    border-radius: 100px;
+    border-color: black;
+    background: transparent;
+    border: 1px solid currentColor;
+    padding: 2rem 5rem ;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: lowercase;
+    white-space: nowrap;
 }
